@@ -1,0 +1,81 @@
+﻿@model IEnumerable<MVC_CRUD_Proyecto_8CodeFirst.Model.Models.Inscripcion>
+
+@{
+    ViewBag.Title = "Inscripciones";
+}
+
+<div class="container mt-3">
+    <h2>Inscripciones</h2>
+
+
+    @*Search o Filter*@
+    <div class="row">
+        <div class="col-sm-2">
+            <a class="btn btn-success" style="margin-bottom:10px" href="/Estudiante/Create">
+                Crear Nuevo
+            </a>
+        </div>
+        <div class="col-sm-10">
+            <input class="form-control" id="input_search" name="search" type="text" placeholder="busqueda...">
+        </div>
+    </div>
+
+
+
+    @*Grid o Table*@
+    <div class="row">
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Curso.CursoID)
+                    </th>
+                    <th>
+                        @Html.DisplayNameFor(model => model.Estudiante.Nombres)
+                    </th>
+                    
+                    <th>
+                        Acciones
+                    </th>
+                </tr>
+            </thead>
+            <tbody id="table_body">
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Curso.Descripcion)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Estudiante.Nombres)
+                        </td>
+                       
+                        <td>
+                            <a href="/Inscripcion/Edit?id=@item.InscripcionID" class="btn btn-primary">Editar</a>
+                            <a href="/Inscripcion/Details?id=@item.InscripcionID" class="btn btn-success">Detalles</a>
+                            <a href="/Inscripcion/Delete?id=@item.InscripcionID" class="btn btn-danger">Borrar</a>
+                        </td>
+                    </tr>
+                }
+
+            </tbody>
+        </table>
+    </div>
+    @*Realiza la busqueda, en la table*@
+    @section scripts
+        {
+
+        <script>
+            $(document).ready(function () {
+                $("#input_search").on("keyup", function () {
+                    var value = $(this).val().toLowerCase();
+                    $("#table_body tr").filter(function () {
+                        $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+                    });
+                });
+
+            });
+        </script>
+    }
+</div>

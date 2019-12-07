@@ -1,0 +1,72 @@
+﻿@model IEnumerable<MVC_CRUD_Proyecto_8CodeFirst.Model.Models.Curso>
+
+@{
+    ViewBag.Title = "Cursos";
+}
+
+<div class="container mt-3">
+<h2>Cursos</h2>
+
+ @*Search o Filter*@
+<div class="row">
+    <div class="col-sm-2">
+        <a class="btn btn-success" style="margin-bottom:10px" href="/Estudiante/Create">
+            Crear Nuevo
+        </a>
+    </div>
+    <div class="col-sm-10">
+        <input class="form-control" id="input_search" name="search" type="text" placeholder="busqueda...">
+    </div>
+</div>
+
+<div class="row">
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>
+                    @Html.DisplayNameFor(model => model.Descripcion)
+                </th>
+
+                <th>
+                    Acciones
+                </th>
+            </tr>
+        </thead>
+        <tbody id="table_body">
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Descripcion)
+                    </td>
+
+                    <td>
+                        <a href="/Cursoe/Edit?id=@item.CursoID" class="btn btn-primary">Editar</a>
+                        <a href="/Cursoe/Details?id=@item.CursoID" class="btn btn-success">Detalles</a>
+                        <a href="/Cursoe/Delete?id=@item.CursoID" class="btn btn-danger">Borrar</a>
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+    </table>
+</div>
+@*Realiza la busqueda, en la table*@
+@section scripts
+        {
+
+    <script>
+        $(document).ready(function () {
+            $("#input_search").on("keyup", function () {
+                var value = $(this).val().toLowerCase();
+                $("#table_body tr").filter(function () {
+                    $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+
+                });
+            });
+
+        });
+    </script>
+}
+</div>

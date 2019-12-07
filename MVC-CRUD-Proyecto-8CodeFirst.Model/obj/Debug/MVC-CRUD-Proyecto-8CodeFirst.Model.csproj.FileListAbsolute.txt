@@ -1,0 +1,11 @@
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.dll.config
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.dll
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.pdb
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\EntityFramework.dll
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\EntityFramework.xml
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\obj\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.csproj.CoreCompileInputs.cache
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\obj\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.csproj.CopyComplete
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\obj\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.dll
+C:\Users\Johan\source\repos\MVC-Proyecto-8CodeFirst.Web\MVC-CRUD-Proyecto-8CodeFirst.Model\obj\Debug\MVC-CRUD-Proyecto-8CodeFirst.Model.pdb
